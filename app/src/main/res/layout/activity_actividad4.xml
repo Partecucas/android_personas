@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".asistencia">
+
+    <TextView
+        android:id="@+id/texthora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#d71822"
+        android:textSize="100px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnactividad3"
+        android:layout_width="139dp"
+        android:layout_height="67dp"
+        android:background="@drawable/btn_redondo"
+        android:text="Volver"
+        android:textColor="@color/white"
+        android:textSize="35px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.975" />
+
+    <LinearLayout
+        android:layout_width="313dp"
+        android:layout_height="460dp"
+        android:background="@drawable/cuadro_asistencia"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498">
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="263dp"
+            android:layout_height="58dp"
+            android:background="@drawable/input"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:hint="Digite el Documento"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/editTextplaca"
+            android:layout_width="263dp"
+            android:layout_height="58dp"
+            android:background="@drawable/input"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:hint="Digite la Placa del Vehiculo"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"/>
+
+        <EditText
+            android:id="@+id/editTextvehiculo"
+            android:layout_width="263dp"
+            android:layout_height="58dp"
+            android:background="@drawable/input"
+            android:ems="10"
+            android:hint="Digite el tipo de vehiculo"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+        <LinearLayout
+            android:layout_width="288dp"
+            android:layout_height="93dp"
+            android:layout_marginTop="200px"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnentrada"
+                android:layout_width="120dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/btn_redondo"
+                android:text="entrada"
+                android:textColor="@color/white"
+                android:textSize="35px"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.975" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnsalir"
+                android:layout_width="120dp"
+                android:layout_height="70dp"
+                android:background="@drawable/boton_redondo2"
+                android:text="Salida"
+                android:textColor="@color/white"
+                android:textSize="35px"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.975" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registra tu Asistencia"
+        android:textSize="30dp"
+        android:textColor="#d6081f"
+        android:layout_marginBottom="50px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
